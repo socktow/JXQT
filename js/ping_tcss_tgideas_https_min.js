@@ -798,7 +798,7 @@
                     __PTTDmp && !PTTinitDmp.isInit && PTTinitDmp(__PTTDmp),
                     PTTRun.autoSend();
                     var s = /([^.]+)\.[^.]+\.com/i.exec(PTTRun.virtualURL);
-                    s || console.warn("\u975eQQ\u57df\u4e0b\u7684\u6570\u636e\u4e0a\u62a5\u6709\u53ef\u80fd\u65e0\u6548\uff0c\u8bf7\u9a8c\u8bc1");
+                    s || console.warn("\u0044\u1EEF\u0020\u006C\u0069\u1EC7\u0075\u0020\u0111\u01B0\u1EE3\u0063\u0020\u0062\u00E1\u006F\u0020\u0063\u00E1\u006F\u0020\u0074\u0072\u006F\u006E\u0067\u0020\u0063\u00E1\u0063\u0020\u006D\u0069\u1EC1\u006E\u0020\u006B\u0068\u00F4\u006E\u0067\u0020\u0070\u0068\u1EA3\u0069\u0020\u006D\u00E1\u0079\u0020\u0063\u0068\u1EE7\u0020\u0063\u00F3\u0020\u0074\u0068\u1EC3\u0020\u006B\u0068\u00F4\u006E\u0067\u0020\u0068\u1EE3\u0070\u0020\u006C\u1EC7\u002C\u0020\u0076\u0075\u0069\u0020\u006C\u00F2\u006E\u0067\u0020\u0078\u00E1\u0063\u0020\u006D\u0069\u006E\u0068");
                     var a = location.search || PTTRun.getData("tokenParams");
                     "sessionStorage"in window && (a = sessionStorage.tokenParams || sessionStorage.dataSearch || location.search || PTTRun.getData("tokenParams")),
                     a && PTTRun.setDatatoqq("tokenParams", a),
@@ -850,7 +850,7 @@
         }
         ,
         window.PTT = function() {
-            !("stopLog"in window) && console.log("Log không có gì để check cả : https://www.facebook.com/odaycomotchuchu/");
+            !("stopLog"in window) && console.log("\u0042\u1EA1\u006E\u0020\u006B\u0068\u00F4\u006E\u0067\u0020\u0074\u0068\u1EC3\u0020\u0074\u0072\u0075\u0079\u0020\u0078\u0075\u1EA5\u0074\u0020\u006C\u006F\u0067\u0020\u0074\u1EA1\u0069\u0020\u0111\u00E2\u0079\u0020\u0111\u01B0\u1EE3\u0063 : https://www.facebook.com/odaycomotchuchu/");
             var e = this;
             e.PTTDomain = document.referrer,
             e.addEvent = function(e, t, o) {

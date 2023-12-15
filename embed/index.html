@@ -38,6 +38,14 @@
         <script src="./assets/js/script.js" defer></script>
     </head>
     <body class="gui emptyEmbed">
+        <script>
+            //mobile 
+               (function () {
+                   if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+                       window.location.href = "/embed/embedmobile/index.html" + location.search;;
+                   }
+               }())
+       </script>
         <div class="w-100 pa2 absolute"><div class="w-auto tc yellow"><!-- react-text: 4 -->Phiên bản cũ hơn -v3  <!-- /react-text --><a class="blue" href="https://chuchudayne.com/embed-v3" target="_blank"> Tại Đây</a></div></div>
         <div class="main">
             <section class="side1 noDisplay">

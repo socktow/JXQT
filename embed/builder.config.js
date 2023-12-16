@@ -8,9 +8,9 @@
 // URL options can override the options below.
 // Options set through the menu can override both until the page is refreshed.
 options = {
-    username: 'Discord Bot',
-    avatar: 'https://cdn.discordapp.com/embed/avatars/1.png',
-    verified: false,
+    username: 'Dino Star',
+    avatar: 'https://64.media.tumblr.com/971556f618a26e636afb943cf35d667f/756c0855440ca153-e6/s540x810/1bb0f8da30261722f234227b9e7d1250c552a678.gif',
+    verified: true,
     noUser: false,
     data: null,
     guiTabs: ['author', 'description'],

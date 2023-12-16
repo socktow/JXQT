@@ -216,7 +216,7 @@ let jsonObject = window.json || {
             url: "https://cdn.discordapp.com/embed/avatars/0.png"
         },
         image: {
-            url: "https://glitchii.github.io/embedbuilder/assets/media/banner.png"
+            url: "https://64.media.tumblr.com/43c120aa6fa6430f164682e827021026/372c7b97e4e2b977-19/s540x810/787ef2da36628eabab08345bb3d78023ca807a4d.gifv"
         },
         footer: {
             text: "Footer text",

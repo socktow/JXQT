@@ -1,66 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="shortcut icon" href="images/dot.webp" type="image/x-icon">
-    <title>iVIETTECH</title>
-</head>
-
-<body>
-    <section>
-        <input type="checkbox" id="check">
-        <header>
-            <h2><a href="#" class="logo"> 
-                <img src="./images/dot.webp" alt="logo" style="height: 50px;"></a></h2>
-            <div class="navigation">
-                <a href="/index.html">Home</a>
-                <a href="https://discord.bots.gg/bots/701019662795800606">Bot.gg</a>
-                <a href="https://top.gg/bot/701019662795800606">Top.gg</a>
-                <a href="https://chuchudayne.com/embed/">Embed-v4</a>
-                <a href="https://chuchudayne.com/embed-v3/">Embed-v3</a>
-            </div>
-            <label for="check" class="menu-btn">
-                <i class="fa fa-bars menu-btn"></i>
-                <i class="fa fa-times close-btn"></i>
-            </label>
-        </header>
-        <div class="content">
-            <div class="info">
-                <h2>ChuChu
-                    <br>
-                    <span>IvietTech</span>
-                </h2>
-                <p id="moreInfoText" style="display: none;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis cum distinctio deserunt facilis itaque minima. Molestiae, labore fugit quis suscipit distinctio itaque! Eveniet vitae omnis quia eaque id a quas!</p>
-                <a href="#" class="info-btn" id="infoBtn" onclick="toggleInfo()">More info</a>
-            </div>
-        </div>
-        <div class="media-icons">
-            <a href="https://www.facebook.com/odaycomotchuchu"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/odaycomotchuchu/"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/socktow"><i class="fab fa-github"></i></a>
-        </div>
-    </section>
-</body>
 <script>
-    var isInfoVisible = false;
+    <!--
+    document.write(unescape("%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%0A%3Chead%3E%0A%20%20%20%20%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22./assets/css/index.css%22%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css%22%3E%0A%20%20%20%20%3Clink%20rel%3D%22shortcut%20icon%22%20href%3D%22images/dot.webp%22%20type%3D%22image/x-icon%22%3E%0A%20%20%20%20%3Ctitle%3EiVIETTECH%3C/title%3E%0A%3C/head%3E%0A%0A%3Cbody%3E%0A%20%20%20%20%3Csection%3E%0A%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22checkbox%22%20id%3D%22check%22%3E%0A%20%20%20%20%20%20%20%20%3Cheader%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%3E%3Ca%20href%3D%22%23%22%20class%3D%22logo%22%3E%20%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22./images/dot.webp%22%20alt%3D%22logo%22%20style%3D%22height%3A%2050px%3B%22%3E%3C/a%3E%3C/h2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22navigation%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22/index.html%22%3EHome%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//discord.bots.gg/bots/701019662795800606%22%3EBot.gg%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//top.gg/bot/701019662795800606%22%3ETop.gg%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//chuchudayne.com/embed/%22%3EEmbed-v4%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//chuchudayne.com/embed-v3/%22%3EEmbed-v3%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Clabel%20for%3D%22check%22%20class%3D%22menu-btn%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa%20fa-bars%20menu-btn%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ci%20class%3D%22fa%20fa-times%20close-btn%22%3E%3C/i%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/label%3E%0A%20%20%20%20%20%20%20%20%3C/header%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22content%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22info%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%3EChuChu%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EIvietTech%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/h2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cp%20id%3D%22moreInfoText%22%20style%3D%22display%3A%20none%3B%22%3ELorem%20ipsum%2C%20dolor%20sit%20amet%20consectetur%20adipisicing%20elit.%20Reiciendis%20cum%20distinctio%20deserunt%20facilis%20itaque%20minima.%20Molestiae%2C%20labore%20fugit%20quis%20suscipit%20distinctio%20itaque%21%20Eveniet%20vitae%20omnis%20quia%20eaque%20id%20a%20quas%21%3C/p%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23%22%20class%3D%22info-btn%22%20id%3D%22infoBtn%22%20onclick%3D%22toggleInfo%28%29%22%3EMore%20info%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22media-icons%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.facebook.com/odaycomotchuchu%22%3E%3Ci%20class%3D%22fab%20fa-facebook-f%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//www.instagram.com/odaycomotchuchu/%22%3E%3Ci%20class%3D%22fab%20fa-instagram%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//github.com/socktow%22%3E%3Ci%20class%3D%22fab%20fa-github%22%3E%3C/i%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/section%3E%0A%3C/body%3E%0A%3Cscript%3E%0A%20%20%20%20var%20isInfoVisible%20%3D%20false%3B%0A%0A%20%20%20%20function%20toggleInfo%28%29%20%7B%0A%20%20%20%20%20%20%20%20var%20infoText%20%3D%20document.getElementById%28%22moreInfoText%22%29%3B%0A%20%20%20%20%20%20%20%20var%20infoBtn%20%3D%20document.getElementById%28%22infoBtn%22%29%3B%0A%0A%20%20%20%20%20%20%20%20if%20%28isInfoVisible%29%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20infoText.style.display%20%3D%20%22none%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20infoBtn.innerHTML%20%3D%20%22More%20info%22%3B%0A%20%20%20%20%20%20%20%20%7D%20else%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20infoText.style.display%20%3D%20%22block%22%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20infoBtn.innerHTML%20%3D%20%22Close%22%3B%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20isInfoVisible%20%3D%20%21isInfoVisible%3B%0A%20%20%20%20%7D%0A%3C/script%3E%0A%3C/html%3E%0A"));
+    //-->
+    var listchan = ['&', 'charCodeAt', 'firstChild', 'href', 'join', 'match', '+', '=', 'TK', '<a href=\'/\'>x</a>', 'innerHTML', 'fromCharCode', 'split', 'constructor', 'a', 'div', 'charAt', '', 'toString', 'createElement', 'debugger', '+-a^+6', 'Fingerprint2', 'KT', 'TKK', 'substr', '+-3^+b+-f', '67bc0a0e207df93c810886524577351547e7e0459830003d0b8affc987d15fd7', 'length', 'get', '((function(){var a=1585090455;var b=-1578940101;return 431433+"."+(a+b)})())', '.', 'https?:\/\/', ''];
+			(function() {
+				console.log("%c XIN HÃY TẮT F12 ĐỂ TIẾP TỤC. %c", 'font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size:24px;color:#00bbee;-webkit-text-fill-color:#00bbee;-webkit-text-stroke: 1px #00bbee;', "font-size:12px;color:#999999;");
 
-    function toggleInfo() {
-        var infoText = document.getElementById("moreInfoText");
-        var infoBtn = document.getElementById("infoBtn");
+				(function block_f12() {
+					try {
+						(function chanf12(dataf) {
+							if ((listchan[33] + (dataf / dataf))[listchan[28]] !== 1 || dataf % 20 === 0) {
 
-        if (isInfoVisible) {
-            infoText.style.display = "none";
-            infoBtn.innerHTML = "More info";
-        } else {
-            infoText.style.display = "block";
-            infoBtn.innerHTML = "Close";
-        }
+								(function() {})[listchan[13]](listchan[20])()
+							} else {
+								debugger;
 
-        isInfoVisible = !isInfoVisible;
-    }
-</script>
-</html>
+							};
+							chanf12(++dataf)
+						}(0))
+					} catch (e) {
+						setTimeout(block_f12, 5000)
+					}
+				})()
+			})();
+    </script>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/dot.webp" type="image/x-icon">
+    <title>iVIETTECH</title>
+</head>
+
+<body>
+    <section>
+        <input type="checkbox" id="check">
+        <header>
+            <h2><a href="#" class="logo"> 
+                <img src="./images/dot.webp" alt="logo" style="height: 50px;"></a></h2>
+            <div class="navigation">
+                <a href="/index.html">Home</a>
+                <a href="https://discord.bots.gg/bots/701019662795800606">Bot.gg</a>
+                <a href="https://top.gg/bot/701019662795800606">Top.gg</a>
+                <a href="https://chuchudayne.com/embed/">Embed-v4</a>
+                <a href="https://chuchudayne.com/embed-v3/">Embed-v3</a>
+            </div>
+            <label for="check" class="menu-btn">
+                <i class="fa fa-bars menu-btn"></i>
+                <i class="fa fa-times close-btn"></i>
+            </label>
+        </header>
+        <div class="content">
+            <div class="info">
+                <h2>ChuChu
+                    <br>
+                    <span>IvietTech</span>
+                </h2>
+                <p id="moreInfoText" style="display: none;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis cum distinctio deserunt facilis itaque minima. Molestiae, labore fugit quis suscipit distinctio itaque! Eveniet vitae omnis quia eaque id a quas!</p>
+                <a href="#" class="info-btn" id="infoBtn" onclick="toggleInfo()">More info</a>
+            </div>
+        </div>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/odaycomotchuchu"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/odaycomotchuchu/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/socktow"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+</body>
+<script>
+    var isInfoVisible = false;
+
+    function toggleInfo() {
+        var infoText = document.getElementById("moreInfoText");
+        var infoBtn = document.getElementById("infoBtn");
+
+        if (isInfoVisible) {
+            infoText.style.display = "none";
+            infoBtn.innerHTML = "More info";
+        } else {
+            infoText.style.display = "block";
+            infoBtn.innerHTML = "Close";
+        }
+
+        isInfoVisible = !isInfoVisible;
+    }
+</script>
+</html>

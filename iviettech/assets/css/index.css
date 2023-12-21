@@ -1,1 +1,252 @@
-@import url('data:text/css;base64,KiB7CiAgbWFyZ2luOiAwOwogIHBhZGRpbmc6IDA7CiAgYm94LXNpemluZzogYm9yZGVyLWJveDsKICBmb250LWZhbWlseTogc3lzdGVtLXVpLCAgICAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICJTZWdvZSBVSSIsIFJvYm90bywKICAgIE94eWdlbiwgVWJ1bnR1LCBDYW50YXJlbGwsICJPcGVuIFNhbnMiLCAiSGVsdmV0aWNhIE5ldWUiLCBzYW5zLXNlcmlmOwp9CgpzZWN0aW9uIHsKICBwb3NpdGlvbjogcmVsYXRpdmU7CiAgd2lkdGg6IDEwMCU7CiAgbWluLWhlaWdodDogMTAwdmg7CiAgZGlzcGxheTogZmxleDsKICBmbGV4LWRpcmVjdGlvbjogY29sdW1uOwogIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDsKICBiYWNrZ3JvdW5kOiB1cmwoaHR0cHM6Ly93YWxscGFwZXJiYXQuY29tL2ltZy83MDAzMDItZGVza3RvcC1waW5rLWdhbWVyLXdhbGxwYXBlci5qcGcpCiAgICBuby1yZXBlYXQ7CiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjsKICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7Cn0KCmhlYWRlciB7CiAgcG9zaXRpb246IHJlbGF0aXZlOwogIHRvcDogMDsKICB3aWR0aDogMTAwJTsKICBwYWRkaW5nOiAzMHB4IDEwMHB4OwogIGRpc3BsYXk6IGZsZXg7CiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuOwogIGFsaWduLWl0ZW1zOiBjZW50ZXI7Cn0KCmhlYWRlciAubG9nb3sKICBwb3NpdGlvbjogcmVsYXRpdmU7CiAgY29sb3I6IGFxdWE7CiAgZm9udC1zaXplOiAzMHB4OwogIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOwogIGZvbnQtd2VpZ2h0OiA4MDA7CiAgbGV0dGVyLXNwYWNpbmc6MXB4Owp9CgpoZWFkZXIgLm5hdmlnYXRpb24gYXsKICBjb2xvcjogIzAwMDsKICB0ZXh0LWRlY29yYXRpb246IG5vbmU7CiAgZm9udC13ZWlnaHQ6IDUwMDsKICBsZXR0ZXItc3BhY2luZzogMXB4OwogIHBhZGRpbmc6IDJweCAxNXB4OwogIGJvcmRlci1yYWRpdXM6IDIwcHg7CiAgdHJhbnNpdGlvbjogMC4zczsKICB0cmFuc2l0aW9uLXByb3BlcnR5OiBiYWNrZ3JvdW5kOwp9CgpoZWFkZXIgLm5hdmlnYXRpb24gYTpub3QoOmxhc3QtY2hpbGQpewogIG1hcmdpbi1yaWdodDogMzBweDsKfQoKaGVhZGVyIC5uYXZpZ2F0aW9uIGE6aG92ZXJ7CiAgYmFja2dyb3VuZDogI2ZmZjsKfQoKLmNvbnRlbnR7CiAgbWF4LXdpZHRoOiA2NTBweDsKICBtYXJnaW46IDYwcHggMTAwcHg7Cn0KCi5jb250ZW50IC5pbmZvIGgyewogIGNvbG9yOiBhcXVhOwogIGZvbnQtc2l6ZTogNTVweDsKICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOwogIGZvbnQtd2VpZ2h0OiA4MDA7CiAgbGV0dGVyLXNwYWNpbmc6IDJweDsKICBsaW5lLWhlaWdodDogNjBweDsKICBtYXJnaW4tYm90dG9tOiAzMHB4Owp9CgouY29udGVudCAuaW5mbyBoMiBzcGFuIHsKICBjb2xvcjogI2ZmZjsKICBmb250LXNpemU6IDUwcHg7CiAgZm9udC13ZWlnaHQ6IDYwMDsKfQoKLmNvbnRlbnQgLmluZm8gcCB7CiAgZm9udC1zaXplOiAxNnB4OwogIGZvbnQtd2VpZ2h0OiA1MDA7CiAgbWFyZ2luLWJvdHRvbTogNDBweDsKfQoKLmNvbnRlbnQgLmluZm8tYnRuIHsKICBjb2xvcjogI2ZmZjsKICBiYWNrZ3JvdW5kOiAjMjI2YTgwOwogIHRleHQtZGVjb3JhdGlvbjogbm9uZTsKICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlOwogIGZvbnQtd2VpZ2h0OiA3MDA7CiAgbGV0dGVyLXNwYWNpbmc6IDJweDsKICBwYWRkaW5nOiAxMHB4IDIwcHg7CiAgYm9yZGVyLXJhZGl1czogNXB4OwogIHRyYW5zaXRpb246IDAuM3M7CiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogYmFja2dyb3VuZDsKfQoKLmNvbnRlbnQgLmluZm8tYnRuOmhvdmVyIHsKICBiYWNrZ3JvdW5kOiAjMDAwMDAwOwp9CgoubWVkaWEtaWNvbnMgewogIGRpc3BsYXk6IGZsZXg7CiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7CiAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICBtYXJnaW46IGF1dG87Cn0KCi5tZWRpYS1pY29ucyBhIHsKICBwb3NpdGlvbjogcmVsYXRpdmU7CiAgY29sb3I6ICMxMTE7CiAgZm9udC1zaXplOiAyNXB4OwogIHRyYW5zaXRpb246IDAuM3M7CiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogdHJhbnNmb3JtOwp9CgoubWVkaWEtaWNvbnMgYTpub3QoOmxhc3QtY2hpbGQpIHsKICBtYXJnaW4tcmlnaHQ6IDYwcHg7Cn0KCi5tZWRpYS1pY29ucyBhOmhvdmVyIHsKICB0cmFuc2Zvcm06IHNjYWxlKDEuNSk7Cn0KCmxhYmVsIHsKICBkaXNwbGF5OiBub25lOwp9CgojY2hlY2sgewogIHotaW5kZXg6IDM7CiAgZGlzcGxheTogbm9uZTsKfQoKLm5hdmlnYXRpb257CiAgICBkaXNwbGF5OiBmbGV4OwogICAgYWxpZ24taXRlbXM6IGNlbnRlcjsKICAgIHRleHQtYWxpZ246IGNlbnRlcjsKICB9CiAgCiAgLm5hdmlnYXRpb24gYXsKICAgIGNvbG9yOiAjMDAwOwogICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogICAgZm9udC13ZWlnaHQ6IDUwMDsKICAgIGxldHRlci1zcGFjaW5nOiAxcHg7CiAgICBwYWRkaW5nOiAycHggMTVweDsKICAgIGJvcmRlci1yYWRpdXM6IDIwcHg7CiAgICB0cmFuc2l0aW9uOiAwLjNzOwogICAgZGlzcGxheTogaW5saW5lLWJsb2NrOyAKICAgIG1hcmdpbjogMCAxMHB4OyAKICB9CiAgCiAgLm5hdmlnYXRpb24gYTpob3ZlcnsKICAgIGJhY2tncm91bmQ6ICNmZmY7CiAgfQogIApAbWVkaWEgKG1heC13aWR0aDogOTYwcHgpewogICAgaGVhZGVyIC5uYXZpZ2F0aW9uewogICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICB9CgogICAgbGFiZWx7CiAgICAgICAgZGlzcGxheTogYmxvY2s7CiAgICAgICAgZm9udC1zaXplOiAyNXB4OwogICAgICAgIGN1cnNvcjogcG9pbnRlcjsKICAgICAgICB0cmFuc2l0aW9uOiAwLjNzOwogICAgICAgIHRyYW5zaXRpb24tcHJvcGVydHk6IGNvbG9yOwogICAgfQoKICAgIGxhYmVsOmhvdmVyewogICAgICAgIGNvbG9yOiAjZmZmOwogICAgfQoKICAgIGxhYmVsIC5jbG9zZS1idG57CiAgICAgICAgZGlzcGxheTogbm9uZTsKICAgIH0KCiAgICAjY2hlY2s6Y2hlY2tlZCB+IGhlYWRlciAubmF2aWdhdGlvbnsKICAgICAgICB6LWluZGV4OiAxOwogICAgICAgIHBvc2l0aW9uOiBmaXhlZDsKICAgICAgICBiYWNrZ3JvdW5kOiB1cmwoaHR0cHM6Ly9pbWcuZnJlZXBpay5jb20vcHJlbWl1bS12ZWN0b3IvY2FydG9vbi1sYW5kc2NhcGUtZ2FtZS1kZXNpZ24tc29mdC1uYXR1cmUtYmFja2dyb3VuZC1waW5rLW1vdW50YWluc18xMjYyNjctNjQyNS5qcGcpOwogICAgICAgIHRvcDogMDsKICAgICAgICBib3R0b206IDA7CiAgICAgICAgbGVmdDogMDsKICAgICAgICByaWdodDogMDsKICAgICAgICBkaXNwbGF5OiBmbGV4OwogICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47CiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7CiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyOwogICAgICAgIGZvbnQtc2l6ZTogMTdweDsKICAgICAgICBwYWRkaW5nLWJvdHRvbTogNzBweDsKICAgIH0KCiAgICAjY2hlY2s6Y2hlY2tlZCB+IGhlYWRlciAubmF2aWdhdGlvbiBhewogICAgICAgIGZvbnQtd2VpZ2h0OiA3MDA7CiAgICAgICAgbWFyZ2luLXRvcDogMDsKICAgICAgICBtYXJnaW4tYm90dG9tOiA1MHB4OwogICAgICAgIGxldHRlci1zcGFjaW5nOiA0cHg7CiAgICAgICAgbWFyZ2luOiAyMHB4IDQwcHg7CiAgICB9CgogICAgI2NoZWNrOmNoZWNrZWQgfiBoZWFkZXIgbGFiZWwgLm1lbnUtYnRuewogICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICB9CgogICAgI2NoZWNrOmNoZWNrZWQgfiBoZWFkZXIgbGFiZWwgLmNsb3NlLWJ0bnsKICAgICAgICB6LWluZGV4OiAyOwogICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIHBvc2l0aW9uOiBmaXhlZDsKICAgIH0KCiAgICBsYWJlbCAubWVudS1idG57CiAgICAgICAgcG9zaXRpb246IGFic29sdXRlOwogICAgfQoKICAgIGhlYWRlciAubG9nb3sKICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7CiAgICAgICAgYm90dG9tOiAtNnB4OwogICAgfQoKICAgIC5jb250ZW50IC5pbmZvIGgyewogICAgICAgIGZvbnQtc2l6ZTogNDVweDsKICAgICAgICBsaW5lLWhlaWdodDogNTBweDsKICAgIH0KCiAgICAuY29udGVudCAuaW5mbyBoMiBzcGFuewogICAgICAgIGZvbnQtc2l6ZTogNDBweDsKICAgICAgICBmb250LXdlaWdodDogNjAwOwogICAgfQoKICAgIC5jb250ZW50IC5pbmZvIHB7CiAgICAgICAgZm9udC1zaXplOiAxNHB4OwogICAgfQp9CgpAbWVkaWEgKG1heC13aWR0aDogNTYwcHgpewogICAgY29udGVudCAuaW5mbyBoMnsKICAgICAgICBmb250LXNpemU6IDQ1cHg7CiAgICAgICAgbGluZS1oZWlnaHQ6IDQwcHg7CiAgICB9CgogICAgLmNvbnRlbnQgLmluZm8gaDIgc3BhbnsKICAgICAgICBmb250LXNpemU6IDMwcHg7CiAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDsKICAgIH0KCiAgICAuY29udGVudCAuaW5mbyBwewogICAgICAgIGZvbnQtc2l6ZTogMTRweDsKICAgIH0KfQ==');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui,    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url(https://wallpaperbat.com/img/700302-desktop-pink-gamer-wallpaper.jpg)
+      no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo{
+    position: relative;
+    color: aqua;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing:1px;
+  }
+  
+  header .navigation a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  
+  header .navigation a:not(:last-child){
+    margin-right: 30px;
+  }
+  
+  header .navigation a:hover{
+    background: #fff;
+  }
+  
+  .content{
+    max-width: 650px;
+    margin: 60px 100px;
+  }
+  
+  .content .info h2{
+    color: aqua;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .content .info h2 span {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .content .info p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+  
+  .content .info-btn {
+    color: #fff;
+    background: #226a80;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  
+  .content .info-btn:hover {
+    background: #000000;
+  }
+  
+  .media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .media-icons a {
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+  }
+  
+  .media-icons a:not(:last-child) {
+    margin-right: 60px;
+  }
+  
+  .media-icons a:hover {
+    transform: scale(1.5);
+  }
+  
+  label {
+    display: none;
+  }
+  
+  #check {
+    z-index: 3;
+    display: none;
+  }
+  
+  .navigation{
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .navigation a{
+      color: #000;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 2px 15px;
+      border-radius: 20px;
+      transition: 0.3s;
+      display: inline-block; 
+      margin: 0 10px; 
+    }
+    
+    .navigation a:hover{
+      background: #fff;
+    }
+    
+  @media (max-width: 960px){
+      header .navigation{
+          display: none;
+      }
+  
+      label{
+          display: block;
+          font-size: 25px;
+          cursor: pointer;
+          transition: 0.3s;
+          transition-property: color;
+      }
+  
+      label:hover{
+          color: #fff;
+      }
+  
+      label .close-btn{
+          display: none;
+      }
+  
+      #check:checked ~ header .navigation{
+          z-index: 1;
+          position: fixed;
+          background: url(https://img.freepik.com/premium-vector/cartoon-landscape-game-design-soft-nature-background-pink-mountains_126267-6425.jpg);
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          font-size: 17px;
+          padding-bottom: 70px;
+      }
+  
+      #check:checked ~ header .navigation a{
+          font-weight: 700;
+          margin-top: 0;
+          margin-bottom: 50px;
+          letter-spacing: 4px;
+          margin: 20px 40px;
+      }
+  
+      #check:checked ~ header label .menu-btn{
+          display: none;
+      }
+  
+      #check:checked ~ header label .close-btn{
+          z-index: 2;
+          display: block;
+          position: fixed;
+      }
+  
+      label .menu-btn{
+          position: absolute;
+      }
+  
+      header .logo{
+          position: absolute;
+          bottom: -6px;
+      }
+  
+      .content .info h2{
+          font-size: 45px;
+          line-height: 50px;
+      }
+  
+      .content .info h2 span{
+          font-size: 40px;
+          font-weight: 600;
+      }
+  
+      .content .info p{
+          font-size: 14px;
+      }
+  }
+  
+  @media (max-width: 560px){
+      content .info h2{
+          font-size: 45px;
+          line-height: 40px;
+      }
+  
+      .content .info h2 span{
+          font-size: 30px;
+          font-weight: 600;
+      }
+  
+      .content .info p{
+          font-size: 14px;
+      }
+  }

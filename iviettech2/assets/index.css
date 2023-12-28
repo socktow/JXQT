@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.container {
+  width: 1290px;
+  margin: 0 auto;
+}
+
+body {
+  min-height: 100vh;
+  background: url(/iviettech2/images/bg.png) no-repeat center top;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url(//game.gtimg.cn/images/jxqy/cp/a20230808zlp/headerTop.png);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #333;
+  background: url(//static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/20/Vegas_League_Season_1.png)
+    no-repeat;
+  display: block;
+  background-size: 100% 100%;
+  width: 68px;
+  height: 67px;
+  margin-right: 8px;
+  align-items: center;
+  color: #ffffff;
+}
+
+header .logo .p {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.part5 {
+  display: flex;
+  justify-content: center;
+  margin-top: 128px;
+}
+
+.part5 .items {
+  text-align: center;
+  width: 198px;
+  margin-right: 60px;
+}
+
+.part5 .items:last-child {
+  margin-right: 0;
+}
+
+.part5 .items p {
+  color: #fff4ae;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.part5 .items img {
+  display: block;
+  width: 198px;
+  height: 198px;
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  font-style: bold;
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+  background: url(//game.gtimg.cn/images/jxqy/cp/a20230808zlp/headerTop.png);
+  display: block;
+}
+
+header .navbar ul li a:hover {
+  background: url(//game.gtimg.cn/images/jxqy/cp/a20230808zlp/headerTop.png);
+  color: white;
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+
+header .navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  display: initial;
+}
+#menu-bar {
+  display: none;
+}
+
+.kv img {
+  transform: scale(0.95);
+  animation: 1s 1s move linear alternate infinite;
+  fill-opacity: 1;
+  align-items: center;
+  position: fixed;
+  width: 50%;
+  left: 25%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes move {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+header label {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 990px) {
+  header {
+    padding: 20px;
+  }
+  header label {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li {
+    background: #fff;
+  }
+  header .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+}

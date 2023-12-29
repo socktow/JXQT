@@ -171,6 +171,14 @@ header label {
   background-position: center 140px;
 }
 
+nav.navbar ul li a:hover {
+  color: yellow;
+}
+
+header .navbar ul li a:hover {
+  filter: brightness(90%);
+}
+
 @media screen and (max-width: 990px) {
   header {
     padding: 0px 0.1rem;
@@ -235,6 +243,14 @@ header label {
     animation: 1s 1s move linear alternate infinite;
   }
 
+  nav.navbar ul li a:hover {
+    color: yellow;
+  }
+  
+  header .navbar ul li a:hover {
+    filter: brightness(90%);
+  }
+  
   @keyframes move {
     0% {
       transform: scale(0.95);

@@ -2,10 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-transform: capitalize;
   text-decoration: none;
+}
+
+@font-face {
+  font-family: "font1";
+  src: url(/font/TP\ Han\ Zi.otf);
 }
 
 .container {
@@ -25,7 +28,7 @@ header {
   right: 0;
   background: url(//game.gtimg.cn/images/jxqy/cp/a20230808zlp/headerTop.png);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px 7%;
+  padding: 2.7px 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -78,32 +81,8 @@ p {
   margin-inline-end: 0px;
 }
 
-.part5 {
-  display: flex;
-  justify-content: center;
-  margin-top: 128px;
-}
-
-.part5 .items {
-  text-align: center;
-  width: 198px;
-  margin-right: 60px;
-}
-
-.part5 .items:last-child {
-  margin-right: 0;
-}
-
-.part5 .items p {
-  color: #fff4ae;
-  font-size: 28px;
-  margin-top: 10px;
-}
-
-.part5 .items img {
-  display: block;
-  width: 198px;
-  height: 198px;
+header .navbar {
+  font-family: "font1";
 }
 
 header .navbar ul {
@@ -156,14 +135,15 @@ header .navbar ul li:hover > ul {
 }
 
 .kv img {
+  margin-top: 20%;
   transform: scale(0.95);
   animation: 1s 1s move linear alternate infinite;
   fill-opacity: 1;
   align-items: center;
-  position: fixed;
+  position: sticky;
   width: 50%;
   left: 25%;
-  top: 30%;
+  top: calc(30% + 50px);
   transform: translate(-50%, -50%);
 }
 
@@ -183,13 +163,31 @@ header label {
   display: none;
 }
 
+.content {
+  background: url(//game.gtimg.cn/images/jxqy/cp/a20230808zlp/bg.jpg) no-repeat
+    center top;
+  background-size: 1920px;
+  height: 4365px;
+  background-position: center 140px;
+}
+
 @media screen and (max-width: 990px) {
   header {
-    padding: 20px;
+    padding: 0px 0.1rem;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
   }
+
+  label[for="menu-bar"] {
+    transform: translateX(-30px);
+    color: #fff;
+  }
+
   header label {
     display: initial;
   }
+
   header .navbar {
     position: absolute;
     top: 100%;
@@ -216,5 +214,31 @@ header label {
 
   #menu-bar:checked ~ .navbar {
     display: initial;
+  }
+
+  .content {
+    background-size: 1920px;
+    height: 4365px;
+    background-position: center 423px;
+  }
+
+  .kv img {
+    position: relative;
+    margin-top: 65%;
+    margin-left: -10%;
+    display: block;
+    height: 14.8rem;
+    width: 25rem;
+    transform: scale(0.95);
+    animation: 1s 1s move linear alternate infinite;
+  }
+
+  @keyframes move {
+    0% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1.05);
+    }
   }
 }

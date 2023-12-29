@@ -219,7 +219,9 @@ header label {
   .content {
     background-size: 1920px;
     height: 4365px;
-    background-position: center 423px;
+    background-position: center 266px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
 
   .kv img {

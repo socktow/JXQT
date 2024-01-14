@@ -1,2 +1,2 @@
-# JXQT
-JXQY index - m/index
+# ChuChuProfile
+ChuChuProfile
